@@ -54,7 +54,7 @@ public class RegistroPonto {
         StringBuilder sb = new StringBuilder();
 
         sb.append("Funcionario: ").append(func.getNome()).append("\n").append("Data do Registro: ").append(getDataRegistro()).append("\n").append("Hora de Entrada: ").append(getHoraEntrada()).append("\n").append("Hora de Saida: ").append(getHoraSaida()).append("\n");
-
+        sb.append("\n ================================================\n");
         return sb.toString();
     }
 }
