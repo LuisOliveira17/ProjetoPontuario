@@ -4,9 +4,10 @@ import model.Secretaria;
 
 public class GerenciarControlePonto {
 
+
     public static void main(String[] args){
 
-        Gerente gerente = new Gerente();
+        Gerente gerente = new Gerente(1,"Laercio","laercio@gmail.com","76787644527","admin","418151");
         Operador operador = new Operador(
                 3,
                 "Laercio gay",
@@ -27,3 +28,4 @@ public class GerenciarControlePonto {
 
     }
 }
+
