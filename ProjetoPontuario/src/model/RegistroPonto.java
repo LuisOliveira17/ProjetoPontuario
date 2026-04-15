@@ -49,4 +49,12 @@ public class RegistroPonto {
     public void setHoraSaida(LocalDateTime horaSaida) {
         this.horaSaida = horaSaida;
     }
+
+    public String apresentarRegistroPonto(){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Funcionario: ").append(func.getNome()).append("\n").append("Data do Registro: ").append(getDataRegistro()).append("\n").append("Hora de Entrada: ").append(getHoraEntrada()).append("\n").append("Hora de Saida: ").append(getHoraSaida()).append("\n");
+
+        return sb.toString();
+    }
 }
