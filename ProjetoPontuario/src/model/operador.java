@@ -1,6 +1,6 @@
 package model;
 
-public class operador extends Funcionario{
+public class Operador extends Funcionario{
     private double ValorHora;
 
     public double getValorHora() {
