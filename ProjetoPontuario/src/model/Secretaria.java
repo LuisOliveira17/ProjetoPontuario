@@ -12,6 +12,7 @@ public class Secretaria extends Funcionario {
         super(idFunc, nome, email, documento);
         this.telefone = telefone;
         this.ramal = ramal;
+
     }
 
     public String getTelefone() {

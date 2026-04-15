@@ -7,11 +7,12 @@ public class Gerente extends Funcionario{
     public Gerente(){
 
     }
-    public Gerente(int idFunc, String nome, String email, String documento) {
+    public Gerente(int idFunc, String nome, String email, String documento,String login, String senha) {
         super(idFunc, nome, email, documento);
         this.login = login;
         this.senha = senha;
     }
+
     public String getLogin() {
         return login;
     }
