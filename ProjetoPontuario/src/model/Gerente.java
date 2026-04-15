@@ -4,6 +4,14 @@ public class Gerente extends Funcionario{
     private String login;
     private String senha;
 
+    public Gerente(){
+
+    }
+    public Gerente(int idFunc, String nome, String email, String documento) {
+        super(idFunc, nome, email, documento);
+        this.login = login;
+        this.senha = senha;
+    }
     public String getLogin() {
         return login;
     }
