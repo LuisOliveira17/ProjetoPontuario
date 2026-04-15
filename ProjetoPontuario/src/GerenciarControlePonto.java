@@ -3,10 +3,13 @@ import model.Operador;
 import model.RegistroPonto;
 import model.Secretaria;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class GerenciarControlePonto {
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
 
         RegistroPonto reg = new RegistroPonto();
 
@@ -27,7 +30,14 @@ public class GerenciarControlePonto {
                 "1999885577",
                 "585462"
         );
+        reg.setIdRegPonto(gerente.getIdFunc());
+        reg.setFunc(gerente);
+        reg.setDataRegistro(LocalDate.now());
+        reg.setHoraEntrada(LocalDateTime.now());
+        Thread.sleep(5000);
+        reg.setHoraSaida(LocalDateTime.now());
 
+        System.out.println(reg.apresentarRegistroPonto());
     }
 }
 
