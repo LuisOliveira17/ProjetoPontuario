@@ -7,6 +7,9 @@ public class GerenciarControlePonto {
 
 
     public static void main(String[] args){
+
+        RegistroPonto reg = new RegistroPonto();
+
         Gerente gerente = new Gerente(1,"Laercio","laercio@gmail.com","76787644527","admin","418151");
         Operador operador = new Operador(
                 3,
@@ -24,9 +27,6 @@ public class GerenciarControlePonto {
                 "1999885577",
                 "585462"
         );
-
-
-
 
     }
 }
