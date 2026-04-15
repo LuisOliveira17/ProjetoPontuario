@@ -30,7 +30,15 @@ public class GerenciarControlePonto {
                 "1999885577",
                 "585462"
         );
+        reg.setIdRegPonto(gerente.getIdFunc());
+        reg.setFunc(gerente);
+        reg.setDataRegistro(LocalDate.now());
+        reg.setHoraEntrada(LocalDateTime.now());
+        Thread.sleep(5000);
+        reg.setHoraSaida(LocalDateTime.now());
 
+        System.out.println(reg.apresentarRegistroPonto());
+        
         reg.setIdRegPonto(operador.getIdFunc());
         reg.setFunc(operador);
         reg.setDataRegistro(LocalDate.now());
@@ -49,7 +57,9 @@ public class GerenciarControlePonto {
         reg.setHoraSaida(LocalDateTime.now());
 
         System.out.println(reg.apresentarRegistroPonto());
-        
+
+
+
     }
 }
 
